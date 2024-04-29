@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(0, 255, 55);
+}
+ 
+main{
+    background-image: url(../images/sky.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.pic1{
+    height: 70px;
+    width: 70px;
+}
+.pic2{
+    height: 70px;
+    width: 70px;
+}
+.pic1{
+    animation-direction: alternate;
+    animation: mymove 5s linear 1s;
+    animation-fill-mode: backwards;
+    position: absolute;
+}
+
+@keyframes mymove {
+    from{left: -70px;}
+    to{left:1000px;}
+}
+.pic2{
+    animation-direction: alternate;
+    animation: mymove1 5s linear 1s;
+    animation-fill-mode: backwards;
+    position: absolute;  
+}
+@keyframes mymove1{
+    from{left: 50px;}
+    to{left:1000px;}
+}
